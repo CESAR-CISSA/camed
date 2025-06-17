@@ -41,13 +41,17 @@ camed/
 
 #### Disclamer: Ensure you have Java installed (required by PySiddhi)
 
-### How to execute
+## How to execute
+### Requirements:
+You must have a docker network running and configured in the project's dockerfile (We define the creation of the network in the nmon script for redundancy purposes)
+    
+### Running
 
     $ sudo su
     $ source venv/bin/activate
     $ ./start_nmon.sh
 
-### Disclamer: Run nmon script in exclusive terminal with root privileges
+##### Disclamer: Run nmon script in exclusive terminal with root privileges
 
 #### 1. Execte as a python script:
     $ export RUN=1                          # Change this value with your desired RUN value
