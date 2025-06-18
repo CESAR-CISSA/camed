@@ -8,7 +8,7 @@ import pandas as pd
 import pickle
 
 IP_ATTACKER = '172.18.0.20' # Change the IP accordaly in case you have change IPSEE code. 
-FILE_OUTPUT_CSV = '../experiments/'+os.environ['RUN']+'.model_output.csv'
+FILE_OUTPUT_CSV = 'experiments/'+os.environ['RUN']+'.model_output.csv'
 MODEL_FILE_PATH = 'model/model.pickle'
 
 def load_model_and_scaler(path):

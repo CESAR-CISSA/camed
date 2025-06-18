@@ -58,7 +58,7 @@ async def main():
 
 
     #print(selected_interface)
-    command = "docker network ls | grep gaia | awk '{print \"br-\"$1}'"
+    command = "docker network ls | grep mqtt | awk '{print \"br-\"$1}'"
     selected_interface = subprocess.run(command, shell=True, capture_output=True, text=True, check=True)
     selected_interface = selected_interface.stdout.strip()
 
